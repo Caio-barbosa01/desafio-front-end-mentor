@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+   body{
+     background-color:hsl(212, 45%, 89%);
+     min-width: 375px;
+     max-width: 1440px;
+     min-height: 667px;
+     max-height: 1056px;
+     font-family: 'Outfit', sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     font-size: 15px;
+     text-indent: 15px;
+    margin: 0px;
+
+   }
+   
+   main{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color:white;
+      width: 400px;
+      height: 500px;
+      border-radius: 10px;
+   }
+
+   .cartao{
+     text-align: center;
+     padding-right: 15px;
+    
+   }
+
+   .cartao > img{
+     width: 250px;
+     height: 250px;
+  }
+
+   img{
+     border-radius: 10px;
+   }
+ 
+   .cartao .texto-principal{
+     color: hsl(218, 44%, 22%);
+     font-weight: 700;
+    
+   }
+   .cartao .texto-secundario{
+     color: hsl(220, 15%, 55%);
+     font-weight: 400;
+   }
+
+   .attribution > a{
+    text-decoration: none;
+   }
+  </style>
+</head>
+<body>
+   <main>
+      <div class="cartao">
+          <img src="images/image-qr-code.png" alt="qr code">
+          <h2 class="texto-principal">Improve your front-end skills by building projects</h2>
+          <p class="texto-secundario">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+  
+      <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/" target="_blank">Caio barbosa</a>.
+     </div>
+   </main>
+</body>
+</html>

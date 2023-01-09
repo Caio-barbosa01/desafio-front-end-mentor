@@ -1,70 +1,81 @@
 @charset "UTF-8";
+
  *{
      margin: 0px;
      padding: 0px;
  }
+
  body{
-     background-color: rgb(40, 40, 85);
-     max-width: 1440px;
-     min-width: 375px;
+     background-color:hsl(217, 54%, 11%);
+     max-width: 100%;
+     min-width: 85vh;
+     
  }
 
  main {
-     background-color: white;
+     background-color: hsl(216, 50%, 16%);
+     color:  hsl(215, 51%, 70%);
+     font-size: 16px;
      max-width: 250px;
-     height: 500px;
+     height: 460px;
      margin: auto;
      margin-top: 60px;
      padding: 20px;
      border-radius: 10px;
-     background-position: center center;
  }
 
  img {
      width: 250px;
      border-radius: 8px;
  }
+ 
 
  div.imagem{
      padding-bottom: 20px;
-     width: 375px;
  }
 
- div.conteudo{
-     
- }
  div.conteudo > p{
-    padding-bottom: 15px;
-    display: flex;
-    
+     padding-bottom: 15px;
  }
  
- p.clipton{
-    
+ p.moeda {
+     color: white;
+     font-weight: bold;
  }
 
- p.data{
-    text-align: right;
-    
- }
-
+span.data{
+     padding-left: 65px; 
+}
  div.informação{
-    
-    padding-top: 20px;
-    border-top: solid 1px;
+     padding-top: 20px;
+     border-top: solid 1px;
  }
 
- div.informação >p {
-    padding-left: 45px;
+ div.informação > p  {
+    display: flex;
+    align-items: center;
+ }
+ span.eth{
+    color:hsl(178, 100%, 50%);
+ }
+ span.nome {
+     padding-top:-20px;
+     padding-left: 15px;
+ }
+
+ strong {
+     color: hsl(0, 0%, 100%)
  }
 
  img.avatar{
-    width: 40px;
+     width: 40px;
+     border: 1px solid white;
+     border-radius: 50%;
+
  }
 
  div.attribution{
-    text-align: center;;
-    margin-top: 25px;
-    background-color: white;
-    
+     text-align: center;
+     margin-top: 63px;
+     background-color: white;  
  }

@@ -1,81 +1,127 @@
 @charset "UTF-8";
-
- *{
-     margin: 0px;
-     padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family= Outfit: wght @400;700 & display=swap');
+ 
+ :root {
+     --cormain: hsl(217, 54%, 11%);
+     --corcard: hsl(216, 50%, 16%);
+     --corline: hsl(215, 32%, 27%);
+     --corletra:hsl(215, 51%, 70%);
+     --corhover:hsl(178, 100%, 50%);
+ }
+ 
+*/ {
+     margin:  0;
+     padding: 0;
  }
 
- body{
-     background-color:hsl(217, 54%, 11%);
-     max-width: 100%;
-     min-width: 85vh;
-     
+ body {
+     background-color: var(--cormain);
+     max-width: 1440px;
+     min-width: 375px;
+     max-height: 80vh;
  }
 
  main {
-     background-color: hsl(216, 50%, 16%);
-     color:  hsl(215, 51%, 70%);
-     font-size: 16px;
+     background-color: var(--corcard);
      max-width: 250px;
-     height: 460px;
+     height: 450px;
      margin: auto;
-     margin-top: 60px;
+     margin-top: 80px;
      padding: 20px;
      border-radius: 10px;
+     font-family: 'Outfit', sans-serif;
+     font-size: 14px;
+     color: var(--corletra);
  }
-
- img {
+  
+ div.imagem {
+     background-image: url("/nft-preview-card-component-main/images/image-equilibrium.jpg");
      width: 250px;
+     height: 250px;
      border-radius: 8px;
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
  }
- 
 
- div.imagem{
-     padding-bottom: 20px;
+ div.overline {
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: var(--corhover);
+     width: 250px;
+     height: 250px;
+     opacity: 0;
+     cursor: pointer;
  }
 
- div.conteudo > p{
-     padding-bottom: 15px;
+ div.overline:hover {
+     opacity: 0.5;
+     background-image: url("/nft-preview-card-component-main/images/icon-view.svg");
+     background-position: center center;
+     background-repeat: no-repeat;
  }
- 
- p.moeda {
+
+ div.informação {
+     padding-top: 15px;
+ }
+
+ div.informação > p.texto1{
      color: white;
-     font-weight: bold;
+     font-weight: bolder;
  }
 
-span.data{
-     padding-left: 65px; 
-}
- div.informação{
-     padding-top: 20px;
-     border-top: solid 1px;
+ div.informação > p.texto1:hover {
+     color: var(--corhover);
+     cursor: pointer;
  }
 
- div.informação > p  {
-    display: flex;
-    align-items: center;
+ div.moeda {
+ 
+    padding-bottom: 20px;
  }
- span.eth{
-    color:hsl(178, 100%, 50%);
+ span.moeda {
+     padding-left: 5px;
+     color: var(--corhover) ;
  }
- span.nome {
-     padding-top:-20px;
+
+ span.data {
+     padding-left: 60px ;
+     position: relative;
+ }
+
+ svg {
+     padding-right: 5px;
+ }
+
+ div.usuario {
+     padding-top: 5px;
+     border-top: solid 1px var(--corline);
+     display: flex;
+     align-items: center;
+ }
+ 
+ img {
+     width: 40px;
+     border-radius: 50%;
+     border: solid 1px white;
+ }
+ p.nome {
      padding-left: 15px;
  }
-
+ 
  strong {
-     color: hsl(0, 0%, 100%)
+     color: white;
  }
 
- img.avatar{
-     width: 40px;
-     border: 1px solid white;
-     border-radius: 50%;
-
+ strong:hover {
+     color: var(--corhover);
+     cursor: pointer;
  }
 
- div.attribution{
+ footer {
      text-align: center;
-     margin-top: 63px;
-     background-color: white;  
+     margin-top: 55px;
+     background-color: white;
  }
